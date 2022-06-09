@@ -38,6 +38,14 @@ function areaTriangulo(base,altura){
     return (base * altura)/2
 }
 
+function alturaTrianguloIsosceles(ladoA,ladoB,ladoBase){
+    var altura;
+    if(ladoA==ladoB){
+        altura=Math.sqrt(Math.pow(ladoA,2)-(Math.pow(ladoBase/2)))
+    }else{
+        console.error("Los lados a y b no son iguales");
+    }
+}
 //console.log("El área del triángulo es: " + areaTriangulo + "cm^2")
 
 
